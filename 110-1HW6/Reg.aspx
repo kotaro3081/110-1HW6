@@ -1,16 +1,18 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Reg.aspx.cs" Inherits="_110_1HW6.Reg" %>
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
 
-<!DOCTYPE html>
+namespace _110_1HW6 {
+    public partial class Reg : System.Web.UI.Page {
+        protected void Page_Load(object sender, EventArgs e) {
+        }
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
-</body>
-</html>
+        protected void btn_Submit_Click(object sender, EventArgs e)
+        {
+            lb_Msg.Text = tb_id.Text + "合法";
+        }
+    }
+}
